@@ -1,0 +1,647 @@
+DEBUG:root:Executing SQL = select count(*) as count from People
+RDB table =  RDBDataTable:
+{
+  "table_name": "People",
+  "connect_info": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "12345678",
+    "db": "test"
+  },
+  "key_columns": [
+    "playerID"
+  ]
+}
+Number of rows = 19617First 10 rows = 
+    playerID birthYear birthMonth birthDay birthCountry birthState     birthCity deathYear  ... weight height bats throws       debut   finalGame   retroID    bbrefID
+0  aardsda01      1981         12       27          USA         CO        Denver            ...    215     75    R      R  2004-04-06  2015-08-23  aardd001  aardsda01
+1  aaronha01      1934          2        5          USA         AL        Mobile            ...    180     72    R      R  1954-04-13  1976-10-03  aaroh101  aaronha01
+2  aaronto01      1939          8        5          USA         AL        Mobile      1984  ...    190     75    R      R  1962-04-10  1971-09-26  aarot101  aaronto01
+3   aasedo01      1954          9        8          USA         CA        Orange            ...    190     75    R      R  1977-07-26  1990-10-03  aased001   aasedo01
+4   abadan01      1972          8       25          USA         FL    Palm Beach            ...    184     73    L      L  2001-09-10  2006-04-13  abada001   abadan01
+5   abadfe01      1985         12       17         D.R.  La Romana     La Romana            ...    220     73    L      L  2010-07-28  2017-10-01  abadf001   abadfe01
+6  abadijo01      1850         11        4          USA         PA  Philadelphia      1905  ...    192     72    R      R  1875-04-26  1875-06-10  abadj101  abadijo01
+7  abbated01      1877          4       15          USA         PA       Latrobe      1957  ...    170     71    R      R  1897-09-04  1910-09-15  abbae101  abbated01
+8  abbeybe01      1869         11       11          USA         VT         Essex      1962  ...    175     71    R      R  1892-06-14  1896-09-23  abbeb101  abbeybe01
+9  abbeych01      1866         10       14          USA         NE    Falls City      1926  ...    169     68    L      L  1893-08-16  1897-08-19  abbec101  abbeych01
+
+[10 rows x 24 columns]
+DEBUG:root:Executing SQL = select playerID,teamID,yearID,AB,H,HR,RBI from Batting where teamID='BOS'  and yearID='1960' 
+query result=
+ [
+  42,
+  [
+    [
+      "boonera01",
+      "BOS",
+      "1960",
+      "78",
+      "16",
+      "1",
+      "11"
+    ],
+    [
+      "borlato01",
+      "BOS",
+      "1960",
+      "13",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "bowsfte01",
+      "BOS",
+      "1960",
+      "4",
+      "1",
+      "0",
+      "2"
+    ],
+    [
+      "breweto01",
+      "BOS",
+      "1960",
+      "62",
+      "12",
+      "1",
+      "2"
+    ],
+    [
+      "buddido01",
+      "BOS",
+      "1960",
+      "428",
+      "105",
+      "6",
+      "36"
+    ],
+    [
+      "busbyji01",
+      "BOS",
+      "1960",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "casalje01",
+      "BOS",
+      "1960",
+      "33",
+      "9",
+      "0",
+      "4"
+    ],
+    [
+      "chittne01",
+      "BOS",
+      "1960",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "clintlo01",
+      "BOS",
+      "1960",
+      "298",
+      "68",
+      "6",
+      "37"
+    ],
+    [
+      "coughma01",
+      "BOS",
+      "1960",
+      "19",
+      "3",
+      "0",
+      "0"
+    ],
+    [
+      "delocik01",
+      "BOS",
+      "1960",
+      "43",
+      "5",
+      "0",
+      "0"
+    ],
+    [
+      "earlear01",
+      "BOS",
+      "1960",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "fornimi01",
+      "BOS",
+      "1960",
+      "15",
+      "6",
+      "0",
+      "1"
+    ],
+    [
+      "geigega01",
+      "BOS",
+      "1960",
+      "245",
+      "74",
+      "9",
+      "33"
+    ],
+    [
+      "giledo01",
+      "BOS",
+      "1960",
+      "51",
+      "9",
+      "1",
+      "4"
+    ],
+    [
+      "greenpu01",
+      "BOS",
+      "1960",
+      "260",
+      "63",
+      "3",
+      "21"
+    ],
+    [
+      "hardyca01",
+      "BOS",
+      "1960",
+      "145",
+      "34",
+      "2",
+      "15"
+    ],
+    [
+      "hillmda01",
+      "BOS",
+      "1960",
+      "6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "jacksro01",
+      "BOS",
+      "1960",
+      "31",
+      "7",
+      "0",
+      "0"
+    ],
+    [
+      "keougma01",
+      "BOS",
+      "1960",
+      "105",
+      "26",
+      "1",
+      "9"
+    ],
+    [
+      "malzofr01",
+      "BOS",
+      "1960",
+      "595",
+      "161",
+      "14",
+      "79"
+    ],
+    [
+      "monbobi01",
+      "BOS",
+      "1960",
+      "65",
+      "6",
+      "0",
+      "1"
+    ],
+    [
+      "muffebi01",
+      "BOS",
+      "1960",
+      "41",
+      "11",
+      "0",
+      "3"
+    ],
+    [
+      "nichoch02",
+      "BOS",
+      "1960",
+      "3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "nixonru01",
+      "BOS",
+      "1960",
+      "272",
+      "81",
+      "5",
+      "33"
+    ],
+    [
+      "pagliji01",
+      "BOS",
+      "1960",
+      "62",
+      "19",
+      "2",
+      "9"
+    ],
+    [
+      "repulri01",
+      "BOS",
+      "1960",
+      "136",
+      "33",
+      "3",
+      "20"
+    ],
+    [
+      "runnepe01",
+      "BOS",
+      "1960",
+      "528",
+      "169",
+      "2",
+      "35"
+    ],
+    [
+      "sadowed01",
+      "BOS",
+      "1960",
+      "93",
+      "20",
+      "3",
+      "8"
+    ],
+    [
+      "stalltr01",
+      "BOS",
+      "1960",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "stephge01",
+      "BOS",
+      "1960",
+      "109",
+      "25",
+      "2",
+      "11"
+    ],
+    [
+      "sturdto01",
+      "BOS",
+      "1960",
+      "22",
+      "4",
+      "0",
+      "1"
+    ],
+    [
+      "sullifr01",
+      "BOS",
+      "1960",
+      "40",
+      "5",
+      "0",
+      "2"
+    ],
+    [
+      "sulliha02",
+      "BOS",
+      "1960",
+      "124",
+      "20",
+      "3",
+      "10"
+    ],
+    [
+      "tasbywi01",
+      "BOS",
+      "1960",
+      "385",
+      "108",
+      "7",
+      "37"
+    ],
+    [
+      "thomsbo01",
+      "BOS",
+      "1960",
+      "114",
+      "30",
+      "5",
+      "20"
+    ],
+    [
+      "webstra01",
+      "BOS",
+      "1960",
+      "3",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "wertzvi01",
+      "BOS",
+      "1960",
+      "443",
+      "125",
+      "19",
+      "103"
+    ],
+    [
+      "willite01",
+      "BOS",
+      "1960",
+      "310",
+      "98",
+      "29",
+      "72"
+    ],
+    [
+      "willste01",
+      "BOS",
+      "1960",
+      "8",
+      "2",
+      "0",
+      "1"
+    ],
+    [
+      "wilsoea01",
+      "BOS",
+      "1960",
+      "23",
+      "4",
+      "0",
+      "2"
+    ],
+    [
+      "worthal01",
+      "BOS",
+      "1960",
+      "1",
+      "0",
+      "0",
+      "0"
+    ]
+  ]
+]
+DEBUG:root:Executing SQL = select playerID,teamID,yearID,AB,H,HR,RBI from batting where playerID='willite01'  and teamID='BOS'  and yearID='1960'  and stint='1' 
+Query result= 
+ [
+  [
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10025' 
+    "willite01",
+    "BOS",
+    "1960",
+    "310",
+    "98",
+    "29",
+    "72"
+  ]
+]
+Query result= 
+ [
+  2,
+  [
+    [
+      "10025",
+DEBUG:root:Executing SQL = Insert into orderdetails (orderNumber,productCode) values ('10025','s19_3171') 
+      "S18_3171"
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10025' 
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ]
+  ]
+]
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where productCode='S18_1749' 
+Query result= 
+ [
+  3,
+  [
+    [
+      "10025",
+      "S18_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ]
+  ]
+]
+DEBUG:root:Executing SQL = delete from orderdetails where orderNumber='10100'  and productCode='S18_1749' 
+Details for order '10100' = 
+ [
+  24,
+  [
+    [
+      "10110",
+      "S18_1749"
+    ],
+    [
+      "10124",
+      "S18_1749"
+    ],
+    [
+      "10138",
+      "S18_1749"
+    ],
+    [
+      "10149",
+      "S18_1749"
+    ],
+    [
+      "10162",
+      "S18_1749"
+    ],
+    [
+      "10173",
+      "S18_1749"
+    ],
+    [
+      "10182",
+      "S18_1749"
+    ],
+    [
+      "10193",
+      "S18_1749"
+    ],
+    [
+      "10204",
+      "S18_1749"
+    ],
+    [
+      "10214",
+      "S18_1749"
+    ],
+    [
+      "10227",
+      "S18_1749"
+    ],
+    [
+      "10241",
+      "S18_1749"
+    ],
+    [
+      "10254",
+      "S18_1749"
+    ],
+    [
+      "10268",
+      "S18_1749"
+    ],
+    [
+      "10280",
+      "S18_1749"
+    ],
+    [
+      "10288",
+      "S18_1749"
+    ],
+    [
+      "10302",
+      "S18_1749"
+    ],
+    [
+      "10312",
+      "S18_1749"
+    ],
+    [
+      "10331",
+      "S18_1749"
+    ],
+    [
+      "10344",
+      "S18_1749"
+    ],
+    [
+      "10367",
+      "S18_1749"
+    ],
+    [
+      "10379",
+      "S18_1749"
+    ],
+    [
+      "10407",
+      "S18_1749"
+    ],
+    [
+      "10420",
+      "S18_1749"
+    ]
+  ]
+]
+
+Deleting productCode 'S18_1749':
+Delete returned  (0, None) 
+
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10100' 
+DEBUG:root:Executing SQL = delete from orderdetails where orderNumber='10100'  and orderLineNumber='2' 
+Details for order '10100' after delete = 
+ [
+  1,
+  [
+    [
+      "10100",
+      "S24_3969"
+    ]
+  ]
+]
+Delete returned  (0, None) 
+
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10025' 
+DEBUG:root:Executing SQL = update orderdetails set orderNumber='10025',productCode='S18_3171' where orderNumber='10100'  and productCode='S18_4409' 
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10025' 
+Details for order '10025' = 
+ [
+  3,
+  [
+    [
+      "10025",
+      "S18_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ]
+  ]
+]
+
+Update productCode 'S18_1749':
+update returned  (0, None) 
+
+Details for order '10025' after update = 
+ [
+  3,
+  [
+    [
+      "10025",
+      "S18_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ],
+    [
+      "10025",
+      "s19_3171"
+    ]
+  ]
+]
+This is the correct answer
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10101'  and orderLineNumber='2' 
+DEBUG:root:Executing SQL = update orderdetails set orderNumber='10101',productCode='S18_3171' where orderNumber='10101'  and orderLineNumber='2' 
+DEBUG:root:Executing SQL = select orderNumber,productCode from orderdetails where orderNumber='10101'  and orderLineNumber='2' 
+Find result= 
+ [
+  [
+    "10101",
+    "S18_3171"
+  ]
+]
+Update returned  (0, None) 
+
+Find result= 
+ [
+  [
+    "10101",
+    "S18_3171"
+  ]
+]

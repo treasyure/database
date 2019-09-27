@@ -1,0 +1,718 @@
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "people",
+  "connect_info": {
+    "directory": "/Users/treasyure/Desktop/4111-database/w4111-Databases-master/HW_Assignments/HW1_ys/Data/Baseball",
+    "file_name": "People.csv"
+  },
+  "key_columns": null,
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 19617 rows
+Created table = CSVDataTable: config data = 
+{
+  "table_name": "people",
+  "connect_info": {
+    "directory": "/Users/treasyure/Desktop/4111-database/w4111-Databases-master/HW_Assignments/HW1_ys/Data/Baseball",
+    "file_name": "People.csv"
+  },
+  "key_columns": null,
+  "table_columns": [
+    "playerID",
+    "birthYear",
+    "birthMonth",
+    "birthDay",
+    "birthCountry",
+    "birthState",
+    "birthCity",
+    "deathYear",
+    "deathMonth",
+    "deathDay",
+    "deathCountry",
+    "deathState",
+    "deathCity",
+    "nameFirst",
+    "nameLast",
+    "nameGiven",
+    "weight",
+    "height",
+    "bats",
+    "throws",
+    "debut",
+    "finalGame",
+    "retroID",
+    "bbrefID"
+  ],
+  "debug": true
+}
+Some Rows: = 
+     playerID birthYear birthMonth birthDay birthCountry birthState      birthCity deathYear deathMonth deathDay  ...  nameLast        nameGiven weight height bats throws       debut   finalGame   retroID    bbrefID
+0   aardsda01      1981         12       27          USA         CO         Denver                                ...   Aardsma      David Allan    215     75    R      R  2004-04-06  2015-08-23  aardd001  aardsda01
+1   aaronha01      1934          2        5          USA         AL         Mobile                                ...     Aaron      Henry Louis    180     72    R      R  1954-04-13  1976-10-03  aaroh101  aaronha01
+2   aaronto01      1939          8        5          USA         AL         Mobile      1984          8       16  ...     Aaron       Tommie Lee    190     75    R      R  1962-04-10  1971-09-26  aarot101  aaronto01
+3    aasedo01      1954          9        8          USA         CA         Orange                                ...      Aase   Donald William    190     75    R      R  1977-07-26  1990-10-03  aased001   aasedo01
+4    abadan01      1972          8       25          USA         FL     Palm Beach                                ...      Abad    Fausto Andres    184     73    L      L  2001-09-10  2006-04-13  abada001   abadan01
+5         ***       ***        ***      ***          ***        ***            ***       ***        ***      ***  ...       ***              ***    ***    ***  ***    ***         ***         ***       ***        ***
+6         ***       ***        ***      ***          ***        ***            ***       ***        ***      ***  ...       ***              ***    ***    ***  ***    ***         ***         ***       ***        ***
+7   zupcibo01      1966          8       18          USA         PA     Pittsburgh                                ...    Zupcic           Robert    220     76    R      R  1991-09-07  1994-08-04  zupcb001  zupcibo01
+8    zupofr01      1939          8       29          USA         CA  San Francisco      2005          3       25  ...      Zupo     Frank Joseph    182     71    L      R  1957-07-01  1961-05-09  zupof101   zupofr01
+9   zuvelpa01      1958         10       31          USA         CA      San Mateo                                ...   Zuvella             Paul    173     72    R      R  1982-09-04  1991-05-02  zuvep001  zuvelpa01
+10  zuverge01      1924          8       20          USA         MI        Holland      2014          9        8  ...  Zuverink           George    195     76    R      R  1951-04-21  1959-06-15  zuveg101  zuverge01
+11  zwilldu01      1888         11        2          USA         MO      St. Louis      1978          3       27  ...  Zwilling  Edward Harrison    160     66    L      L  1910-08-14  1916-07-12  zwild101  zwilldu01
+
+[12 rows x 24 columns]
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "batting",
+  "connect_info": {
+    "directory": "/Users/treasyure/Desktop/4111-database/w4111-Databases-master/HW_Assignments/HW1_ys/Data/Baseball",
+    "file_name": "Batting.csv"
+  },
+  "key_columns": [
+    "playerID",
+    "teamID",
+    "yearID",
+    "stint"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 105861 rows
+query result=
+ [
+  {
+    "playerID": "boonera01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "78",
+    "H": "16",
+    "HR": "1",
+    "RBI": "11"
+  },
+  {
+    "playerID": "borlato01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "13",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "bowsfte01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "4",
+    "H": "1",
+    "HR": "0",
+    "RBI": "2"
+  },
+  {
+    "playerID": "breweto01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "62",
+    "H": "12",
+    "HR": "1",
+    "RBI": "2"
+  },
+  {
+    "playerID": "buddido01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "428",
+    "H": "105",
+    "HR": "6",
+    "RBI": "36"
+  },
+  {
+    "playerID": "busbyji01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "0",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "casalje01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "33",
+    "H": "9",
+    "HR": "0",
+    "RBI": "4"
+  },
+  {
+    "playerID": "chittne01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "1",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "clintlo01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "298",
+    "H": "68",
+    "HR": "6",
+    "RBI": "37"
+  },
+  {
+    "playerID": "coughma01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "19",
+    "H": "3",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "delocik01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "43",
+    "H": "5",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "earlear01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "1",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "fornimi01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "15",
+    "H": "6",
+    "HR": "0",
+    "RBI": "1"
+  },
+  {
+    "playerID": "geigega01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "245",
+    "H": "74",
+    "HR": "9",
+    "RBI": "33"
+  },
+  {
+    "playerID": "giledo01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "51",
+    "H": "9",
+    "HR": "1",
+    "RBI": "4"
+  },
+  {
+    "playerID": "greenpu01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "260",
+    "H": "63",
+    "HR": "3",
+    "RBI": "21"
+  },
+  {
+    "playerID": "hardyca01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "145",
+    "H": "34",
+    "HR": "2",
+    "RBI": "15"
+  },
+  {
+    "playerID": "hillmda01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "6",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "jacksro01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "31",
+    "H": "7",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "keougma01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "105",
+    "H": "26",
+    "HR": "1",
+    "RBI": "9"
+  },
+  {
+    "playerID": "malzofr01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "595",
+    "H": "161",
+    "HR": "14",
+    "RBI": "79"
+  },
+  {
+    "playerID": "monbobi01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "65",
+    "H": "6",
+    "HR": "0",
+    "RBI": "1"
+  },
+  {
+    "playerID": "muffebi01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "41",
+    "H": "11",
+    "HR": "0",
+    "RBI": "3"
+  },
+  {
+    "playerID": "nichoch02",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "3",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "nixonru01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "272",
+    "H": "81",
+    "HR": "5",
+    "RBI": "33"
+  },
+  {
+    "playerID": "pagliji01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "62",
+    "H": "19",
+    "HR": "2",
+    "RBI": "9"
+  },
+  {
+    "playerID": "repulri01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "136",
+    "H": "33",
+    "HR": "3",
+    "RBI": "20"
+  },
+  {
+    "playerID": "runnepe01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "528",
+    "H": "169",
+    "HR": "2",
+    "RBI": "35"
+  },
+  {
+    "playerID": "sadowed01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "93",
+    "H": "20",
+    "HR": "3",
+    "RBI": "8"
+  },
+  {
+    "playerID": "stalltr01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "0",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  },
+  {
+    "playerID": "stephge01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "109",
+    "H": "25",
+    "HR": "2",
+    "RBI": "11"
+  },
+  {
+    "playerID": "sturdto01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "22",
+    "H": "4",
+    "HR": "0",
+    "RBI": "1"
+  },
+  {
+    "playerID": "sullifr01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "40",
+    "H": "5",
+    "HR": "0",
+    "RBI": "2"
+  },
+  {
+    "playerID": "sulliha02",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "124",
+    "H": "20",
+    "HR": "3",
+    "RBI": "10"
+  },
+  {
+    "playerID": "tasbywi01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "385",
+    "H": "108",
+    "HR": "7",
+    "RBI": "37"
+  },
+  {
+    "playerID": "thomsbo01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "114",
+    "H": "30",
+    "HR": "5",
+    "RBI": "20"
+  },
+  {
+    "playerID": "webstra01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "3",
+    "H": "0",
+    "HR": "0",
+    "RBI": "1"
+  },
+  {
+    "playerID": "wertzvi01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "443",
+    "H": "125",
+    "HR": "19",
+    "RBI": "103"
+  },
+  {
+    "playerID": "willite01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "310",
+    "H": "98",
+    "HR": "29",
+    "RBI": "72"
+  },
+  {
+    "playerID": "willste01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "8",
+    "H": "2",
+    "HR": "0",
+    "RBI": "1"
+  },
+  {
+    "playerID": "wilsoea01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "23",
+    "H": "4",
+    "HR": "0",
+    "RBI": "2"
+  },
+  {
+    "playerID": "worthal01",
+    "teamID": "BOS",
+    "yearID": "1960",
+    "AB": "1",
+    "H": "0",
+    "HR": "0",
+    "RBI": "0"
+  }
+]
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "batting",
+  "connect_info": {
+    "directory": "/Users/treasyure/Desktop/4111-database/w4111-Databases-master/HW_Assignments/HW1_ys/Data/Baseball",
+    "file_name": "Batting.csv"
+  },
+  "key_columns": [
+    "playerID",
+    "teamID",
+    "yearID",
+    "stint"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 105861 rows
+Query result= 
+ {
+  "playerID": "willite01",
+  "teamID": "BOS",
+  "yearID": "1960",
+  "AB": "310",
+  "H": "98",
+  "HR": "29",
+  "RBI": "72"
+}
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "orderdetails",
+  "connect_info": {
+    "directory": "../Data",
+    "file_name": "orderdetails.csv"
+  },
+  "key_columns": [
+    "productCode"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+Query result= 
+ []
+DEBUG:root:CSVDataTable._load: Loaded 2996 rows
+Query result= 
+ [
+  {
+    "orderNumber": "10025",
+    "productCode": "s19_3171"
+  }
+]
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "orderdetails",
+  "connect_info": {
+    "directory": "../Data",
+    "file_name": "orderdetails.csv",
+    "delimiter": ";"
+  },
+  "key_columns": [
+    "orderNumber",
+    "orderLineNumber"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 2996 rows
+Details for order '10100' = 
+ [
+  {
+    "orderNumber": "10100",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10110",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10124",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10138",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10149",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10162",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10173",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10182",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10193",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10204",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10214",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10227",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10241",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10254",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10268",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10280",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10288",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10302",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10312",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10331",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10344",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10367",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10379",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10407",
+    "productCode": "S18_1749"
+  },
+  {
+    "orderNumber": "10420",
+    "productCode": "S18_1749"
+  }
+]
+
+Deleting productCode 'S18_1749':
+Delete returned  1 
+
+Details for order '10100' after delete = 
+ [
+  {
+    "orderNumber": "10100",
+    "productCode": "S18_2248"
+  },
+  {
+    "orderNumber": "10100",
+    "productCode": "S18_4409"
+  },
+  {
+    "orderNumber": "10100",
+    "productCode": "S24_3969"
+  }
+]
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "orderdetails",
+  "connect_info": {
+    "directory": "../Data",
+    "file_name": "orderdetails.csv",
+    "delimiter": ";"
+  },
+  "key_columns": [
+    "orderNumber",
+    "orderLineNumber"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 2996 rows
+Delete returned  1 
+
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "orderdetails",
+  "connect_info": {
+    "directory": "../Data",
+    "file_name": "orderdetails.csv",
+    "delimiter": ";"
+  },
+  "key_columns": [
+    "orderNumber",
+    "orderLineNumber"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 2996 rows
+Details for order '10025' = 
+ []
+
+Update productCode 'S18_1749':
+update returned  1 
+
+Details for order '10025' after update = 
+ [
+  {
+    "orderNumber": "10025",
+    "productCode": "S18_3171"
+  }
+]
+This is the correct answer
+DEBUG:root:CSVDataTable.__init__: data = {
+  "table_name": "orderdetails",
+  "connect_info": {
+    "directory": "../Data",
+    "file_name": "orderdetails.csv",
+    "delimiter": ";"
+  },
+  "key_columns": [
+    "orderNumber",
+    "orderLineNumber"
+  ],
+  "table_columns": null,
+  "debug": true
+}
+DEBUG:root:CSVDataTable._load: Loaded 2996 rows
+Find result= 
+ {
+  "orderNumber": "10100",
+  "productCode": "S18_2248"
+}
+Update returned  1 
+
+Find result= 
+ {
+  "orderNumber": "10100",
+  "productCode": "S18_3171"
+}
